@@ -3,7 +3,5 @@ pipeline:
     image: alpine
     commands:
     - apk add make gcc g++ git
-    - git clone gitea@danielyrovas.com:dev/woodpecker-cpp-test.git wpccp
-    - cd wpccp
     - make
     - ./build/apps/program
