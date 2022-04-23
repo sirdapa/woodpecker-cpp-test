@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include <unistd.h>
 #include <sys/wait.h>
 
@@ -28,4 +29,13 @@ int ls(const char *dir) {
 
    }
    return status; // this is the parent process again.
+}
+
+
+int main() {
+
+   std::cout << "ls'ing /" << std::endl;
+   std::cout << "returned: " << ls("/") << std::endl;
+
+   return 0;
 }
